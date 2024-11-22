@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendação de Filmes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendação de Filmes</h1>
+        <p>Escolha seu gênero favorito para receber uma sugestão de filme:</p>
+        
+        <form id="form-recomendacao">
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="Ação">Ação</option>
+                <option value="Comédia">Comédia</option>
+                <option value="Terror">Terror</option>
+                <option value="Animação">Animação</option>
+            </select>
+
+            <button type="submit">Obter Recomendação</button>
+        </form>
+
+        <div id="sugestoes" class="sugestoes">
+            <!-- Resultados serão exibidos aqui -->
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

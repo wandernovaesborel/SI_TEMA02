@@ -1,0 +1,7 @@
+Passo 1: Instalar o Flask
+
+pip install flask
+
+Passo 2: Rodar aplicação
+
+python app.py
